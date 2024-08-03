@@ -196,7 +196,8 @@ footer{
 /* Responsivse media query */
 @media screen and (max-width:576px) {
   .navbar,
-  .navlinks{
+  .navlinks,
+  .featured-products{
     flex-direction: column;
   }
   .container{
@@ -208,5 +209,14 @@ footer{
    gap: 24px;
    justify-content: center;
    margin: 50px 64px;
+  }
+  .card-details{
+    grid-template-columns: repeat(1,1fr);
+  }
+  footer{
+    max-width: 100%;
+  }
+  .fotter{
+    margin: 50px 0;
   }
 }
